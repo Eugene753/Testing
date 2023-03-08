@@ -14,7 +14,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-               gv.build()
+               script{
+                    gv.build()
+               }
             }
         }
         stage('Test') {
