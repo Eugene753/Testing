@@ -1,34 +1,35 @@
 // Declarative //
+def gv
+
 pipeline {
     agent any
 
     stages {
+        stage("init"){
+            steps{
+                 script{
+                    gv = load "fun.groovy"
+                }
+            }
+        }
         stage('Build') {
             steps {
-                echo 'Building..'
+               gv.build()
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                script{
+                    gv.test()
+                }
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                script{
+                    gv.deploy()
+                }
             }
         }
-    }
-}
-// Script //
-node {
-    stage('Build') {
-        echo 'Building....'
-    }
-    stage('Test') {
-        echo 'Building....'
-    }
-    stage('Deploy') {
-        echo 'Deploying....'
     }
 }
