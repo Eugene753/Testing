@@ -8,7 +8,7 @@ pipeline {
         stage("init"){
             steps{
                  script{
-                    gv = load ".src/main/GrovyFiles/fun.groovy"
+                    gv = load "src/main/GrovyFiles/fun.groovy"
                 }
             }
         }
