@@ -4,27 +4,32 @@ def gv
 pipeline {
     agent any
 
-    def myclass = new MyClass();
-
     stages {
+        stage("init"){
+            steps{
+                 script{
+                    def gv = new MyClass();
+                }
+            }
+        }
         stage('Build') {
             steps {
                script{
-                    myclass.build()
+                    gv.build()
                }
             }
         }
         stage('Test') {
             steps {
                 script{
-                    myclass.test()
+                    gv.test()
                 }
             }
         }
         stage('Deploy') {
             steps {
                 script{
-                    myclass.deploy()
+                    gv.deploy()
                 }
             }
         }
