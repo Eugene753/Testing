@@ -1,5 +1,7 @@
 // Declarative //
-import MyClass;
+library 'my-library'
+
+import my.library.MyClass
 
 pipeline {
     agent any
