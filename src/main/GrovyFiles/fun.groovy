@@ -1,13 +1,15 @@
-def build(){
-    echo 'Building'
-}
+class MyClass {
 
-def test(){
-    echo 'Testing'
-}
 
-def deploy(){
-    echo 'Deploying'
-}
+    def build() {
+        echo 'Building'
+    }
 
-return this
+    def test() {
+        echo 'Testing'
+    }
+
+    def deploy() {
+        echo 'Deploying'
+    }
+}

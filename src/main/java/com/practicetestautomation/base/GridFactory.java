@@ -14,12 +14,10 @@ public class GridFactory {
 
 	private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	private String browser;
-	private String platform;
 	private Logger log;
 
-	public GridFactory(String browser, String platform, Logger log) {
+	public GridFactory(String browser, Logger log) {
 		this.browser = browser.toLowerCase();
-		this.platform = platform;
 		this.log = log;
 	}
 
@@ -43,21 +41,6 @@ public class GridFactory {
 
 		default:
 			capabilities.setBrowserName("chrome");
-			break;
-		}
-		
-		
-		switch (platform) {
-		case "WIN10":
-			capabilities.setPlatform(Platform.WIN10);
-			break;
-
-		case "MAC":
-			capabilities.setPlatform(Platform.MAC);
-			break;
-
-		default:
-			capabilities.setPlatform(Platform.WIN10);
 			break;
 		}
 		

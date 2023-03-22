@@ -4,14 +4,9 @@ def gv
 pipeline {
     agent any
 
+    def gv =new MyClass();
+
     stages {
-        stage("init"){
-            steps{
-                 script{
-                    gv = load "src/main/GrovyFiles/fun.groovy"
-                }
-            }
-        }
         stage('Build') {
             steps {
                script{
