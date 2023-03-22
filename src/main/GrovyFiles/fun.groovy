@@ -13,3 +13,5 @@ class MyClass {
         echo 'Deploying'
     }
 }
+
+return this
