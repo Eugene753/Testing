@@ -1,5 +1,5 @@
 // Declarative //
-def gv
+import MyClass;
 
 pipeline {
     agent any
