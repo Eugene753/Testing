@@ -14,3 +14,4 @@ class Fun {
     }
 
 }
+return this

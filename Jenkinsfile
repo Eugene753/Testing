@@ -3,7 +3,7 @@
 pipeline {
 
     agent any
-    
+
     def gv = new Fun();
 
     stages {
