@@ -1,19 +1,10 @@
 // Declarative //
-library 'my-library'
-
-import my.library.MyClass
 
 pipeline {
     agent any
 
-    stages {
-        stage("init"){
-            steps{
-                 script{
-                    def gv = new MyClass();
-                }
-            }
-        }
+        def gv = new Fun();
+
         stage('Build') {
             steps {
                script{
