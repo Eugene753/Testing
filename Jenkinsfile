@@ -3,7 +3,7 @@
 pipeline {
     agent any
 
-        def gv = new Fun();
+        def gv = load "src/main/GrovyFiles/Fun.groovy" ;
 
         stage('Build') {
             steps {
