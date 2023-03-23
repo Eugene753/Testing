@@ -1,7 +1,6 @@
 // Declarative //
-
+def gv;
 pipeline {
-    def gv;
 
     agent any
     stages{
