@@ -1,18 +1,20 @@
 // Declarative //
-def gv;
+//def gv;
 pipeline {
 
     agent any
+    
+    def gv = new Fun();
 
     stages {
 
-       stage('init') {
+      /* stage('init') {
            steps {
               script{
                  gv = load "src/main/GrovyFiles/Fun.groovy";
               }
            }
-        }
+        }*/
 
         stage('Build') {
             steps {

@@ -1,4 +1,4 @@
-
+class Fun {
 
 
     def build() {
@@ -13,5 +13,4 @@
         echo 'Deploying'
     }
 
-
-return this
+}
