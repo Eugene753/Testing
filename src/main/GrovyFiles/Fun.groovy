@@ -13,3 +13,5 @@ class Fun {
         echo 'Deploying'
     }
 }
+
+return this
