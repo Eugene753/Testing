@@ -1,9 +1,17 @@
 // Declarative //
 
 pipeline {
+    def gv;
+
     agent any
 
-        def gv = load "src/main/GrovyFiles/Fun.groovy" ;
+       stage('Build') {
+           steps {
+              script{
+                 gv = load "src/main/GrovyFiles/Fun.groovy";
+              }
+           }
+        }
 
         stage('Build') {
             steps {
