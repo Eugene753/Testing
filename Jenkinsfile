@@ -4,9 +4,10 @@ pipeline {
 
     agent any
 
-    gv = load "src/main/GrovyFiles/Fun.groovy";
+
 
     stages {
+    gv = load "src/main/GrovyFiles/Fun.groovy";
 
        /*stage('init') {
            steps {
