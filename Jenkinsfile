@@ -8,13 +8,14 @@ pipeline {
 
     stages {
 
-      /* stage('init') {
+       stage('init') {
            steps {
               script{
-                 gv = load "src/main/GrovyFiles/Fun.groovy";
+                 //gv = load "src/main/GrovyFiles/Fun.groovy";
+                 gv = new Fun();
               }
            }
-        }*/
+        }
 
         stage('Build') {
             steps {
