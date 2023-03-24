@@ -1,4 +1,5 @@
 // Declarative //
+load "src/main/GrovyFiles/Fun.groovy";
 def gv;
 pipeline {
 
@@ -7,7 +8,7 @@ pipeline {
 
 
     stages {
-    gv = load "src/main/GrovyFiles/Fun.groovy";
+    gv = new Fun();
 
        /*stage('init') {
            steps {
