@@ -1,10 +1,10 @@
 // Declarative //
-//def gv;
+def gv;
 pipeline {
 
     agent any
 
-    def gv = new Fun();
+    gv = new Fun();
 
     stages {
 
