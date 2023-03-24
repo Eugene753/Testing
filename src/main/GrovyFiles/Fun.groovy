@@ -1,5 +1,3 @@
-class Fun {
-
 
     def build() {
         echo 'Building'
@@ -12,6 +10,3 @@ class Fun {
     def deploy() {
         echo 'Deploying'
     }
-
-}
-return this
