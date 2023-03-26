@@ -4,14 +4,24 @@ pipeline {
 
     agent any
 
+    stages{
+        stage('init'){
+            steps{
+                script{
+                    gv = load "src/main/GrovyFiles/Fun.groovy";
+                }
+            }
+        }
+    }
+
     stages {
-       stage('init') {
+       /*stage('init') {
            steps {
               script{
                  gv = load "src/main/GrovyFiles/Fun.groovy";
               }
            }
-        }
+        }*/
 
         stage('Build') {
             steps {
