@@ -1,12 +1,11 @@
 // Declarative //
-def gv;
+import "scr/main/GrovyFiles/Fun.groovy"
+
+def gv = Fun.groovy
 pipeline {
 
     agent any
-    
-    script{
-       gv = load "src/main/GrovyFiles/Fun.groovy";
-    }
+
 
     stages {
        /*stage('init') {
