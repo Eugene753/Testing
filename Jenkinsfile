@@ -1,6 +1,7 @@
 // Declarative //
+node ('init'){
 def  gv = load "src/main/GrovyFiles/Fun.groovy";
-
+}
 //def gv = Fun.groovy
 pipeline {
 
