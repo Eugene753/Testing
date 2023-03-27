@@ -7,9 +7,9 @@ def gv;
 pipeline {
 
     agent any
-    
-    gv = load "src/main/GrovyFiles/Fun.groovy";
-
+    node{
+        gv = load "src/main/GrovyFiles/Fun.groovy";
+    }
     stages {
        /*stage('init') {
            steps {
