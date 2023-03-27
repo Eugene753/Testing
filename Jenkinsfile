@@ -1,5 +1,5 @@
 // Declarative //
-node ('init'){
+node {
 def  gv = load "src/main/GrovyFiles/Fun.groovy";
 }
 //def gv = Fun.groovy
