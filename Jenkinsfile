@@ -1,13 +1,14 @@
 // Declarative //
 def gv;
-node {
+/*node {
     gv = load "src/main/GrovyFiles/Fun.groovy";
-}
+}*/
 //def gv = Fun.groovy
 pipeline {
 
     agent any
-
+    
+    gv = load "src/main/GrovyFiles/Fun.groovy";
 
     stages {
        /*stage('init') {
