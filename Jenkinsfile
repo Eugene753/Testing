@@ -4,14 +4,15 @@ def gv;
     gv = load "src/main/GrovyFiles/Fun.groovy";
 }*/
 //def gv = Fun.groovy
+
+def load(){
+    return gv = load "src/main/GrovyFiles/Fun.groovy";
+}
+
 pipeline {
 
     agent any
 
-    load {
-        gv = load "src/main/GrovyFiles/Fun.groovy";
-    }
-    
     stages {
        /*stage('init') {
            steps {
@@ -24,21 +25,21 @@ pipeline {
         stage('Build') {
             steps {
                script{
-                    gv.build()
+                    load().build()
                }
             }
         }
         stage('Test') {
             steps {
                 script{
-                    gv.test()
+                    load().test()
                 }
             }
         }
         stage('Deploy') {
             steps {
                 script{
-                    gv.deploy()
+                    load().deploy()
                 }
             }
         }
