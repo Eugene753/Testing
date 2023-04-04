@@ -13,7 +13,7 @@
 
     def getCron(){
         if(isAutomationCheck()) {
-             return 'H 4/* 0 0 1-5'
+             return cron('H 4/* 0 0 1-5')
         }
     }
 

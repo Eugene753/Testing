@@ -12,7 +12,7 @@ def load(){
 
 
 pipeline {
-triggers { cron(load().getCron()) }
+triggers { load().getCron() }
 
     agent any
 
