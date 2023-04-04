@@ -11,4 +11,14 @@
         echo 'Deploying'
     }
 
+    def getCron(){
+        if(isAutomationCheck()) {
+             return 'H 4/* 0 0 1-5'
+        }
+    }
+
+    def isAutomationCheck(){
+        return BRANCH_NAME = 'main'
+    }
+
     return this
