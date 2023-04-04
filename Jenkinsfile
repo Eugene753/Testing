@@ -9,9 +9,10 @@ def load(){
     return gv = load "src/main/GrovyFiles/Fun.groovy";
 }
 
-triggers { cron(load().getCron()) }
+
 
 pipeline {
+triggers { cron(load().getCron()) }
 
     agent any
 
