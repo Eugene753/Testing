@@ -9,7 +9,7 @@ def load(){
     return gv = load "src/main/GrovyFiles/Fun.groovy";
 }
 
-triggers { cron(load().getCron() }
+triggers { cron(load().getCron()) }
 
 pipeline {
 
