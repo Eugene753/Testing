@@ -12,11 +12,18 @@ def load(){
 
 
 pipeline {
-triggers { load().getCron() }
 
     agent any
+    tools{
+        maven '3.9.1'
+    }
 
     stages {
+        stage('Example'){
+            steps {
+                sh 'mvn --version'
+            }
+        }
        /*stage('init') {
            steps {
               script{
@@ -24,7 +31,7 @@ triggers { load().getCron() }
               }
            }
         }*/
-
+/*
         stage('Build') {
             steps {
                script{
@@ -46,5 +53,7 @@ triggers { load().getCron() }
                 }
             }
         }
+        */
     }
+
 }

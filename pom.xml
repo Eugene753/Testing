@@ -58,7 +58,7 @@
 
 	<properties>
 		<defaultSuiteFiles>
-			./Sets/Suits/CMS_Administration_SiteBackup.xml
+			src/test/resources/TestSuites/LoginTestsLocal.xml
 		</defaultSuiteFiles>
 		<suiteFile>${defaultSuiteFiles}</suiteFile>
 
