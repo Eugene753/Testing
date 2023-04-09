@@ -1,15 +1,9 @@
 // Declarative //
-def gv;
+
 /*node {
     gv = load "src/main/GrovyFiles/Fun.groovy";
 }*/
 //def gv = Fun.groovy
-
-def load(){
-    return gv = load "src/main/GrovyFiles/Fun.groovy";
-}
-
-
 
 pipeline {
 
