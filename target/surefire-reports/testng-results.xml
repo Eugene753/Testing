@@ -2,12 +2,12 @@
 <testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-09T18:22:42 EDT" name="LoginTestsSuite" finished-at="2023-04-09T18:22:58 EDT" duration-ms="16167">
+  <suite started-at="2023-04-09T19:55:41 EDT" name="LoginTestsSuite" finished-at="2023-04-09T19:55:53 EDT" duration-ms="11404">
     <groups>
     </groups>
-    <test started-at="2023-04-09T18:22:42 EDT" name="PositiveTests-Chrome" finished-at="2023-04-09T18:22:51 EDT" duration-ms="8559">
+    <test started-at="2023-04-09T19:55:41 EDT" name="PositiveTests-Chrome" finished-at="2023-04-09T19:55:46 EDT" duration-ms="4486">
       <class name="com.practicetestautomation.tests.LoginTests">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.practicetestautomation.tests.LoginTests@55b53d44]" started-at="2023-04-09T18:22:42 EDT" name="setUp" finished-at="2023-04-09T18:22:44 EDT" duration-ms="2237" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.practicetestautomation.tests.LoginTests@55b53d44]" started-at="2023-04-09T19:55:41 EDT" name="setUp" finished-at="2023-04-09T19:55:43 EDT" duration-ms="2200" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,26 +26,26 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[org.testng.TestRunner@4b4ee511]]>
+                <![CDATA[org.testng.TestRunner@6fbb4061]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logInTest()[pri:1, instance:com.practicetestautomation.tests.LoginTests@55b53d44]" started-at="2023-04-09T18:22:44 EDT" name="logInTest" finished-at="2023-04-09T18:22:51 EDT" duration-ms="6189" status="PASS">
+        <test-method signature="logInTest()[pri:1, instance:com.practicetestautomation.tests.LoginTests@55b53d44]" started-at="2023-04-09T19:55:43 EDT" name="logInTest" finished-at="2023-04-09T19:55:45 EDT" duration-ms="2148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.practicetestautomation.tests.LoginTests@55b53d44]" started-at="2023-04-09T18:22:51 EDT" name="tearDown" finished-at="2023-04-09T18:22:51 EDT" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.practicetestautomation.tests.LoginTests@55b53d44]" started-at="2023-04-09T19:55:45 EDT" name="tearDown" finished-at="2023-04-09T19:55:46 EDT" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.practicetestautomation.tests.LoginTests -->
     </test> <!-- PositiveTests-Chrome -->
-    <test started-at="2023-04-09T18:22:51 EDT" name="NegativeUsernameTests" finished-at="2023-04-09T18:22:53 EDT" duration-ms="2633">
+    <test started-at="2023-04-09T19:55:46 EDT" name="NegativeUsernameTests" finished-at="2023-04-09T19:55:48 EDT" duration-ms="2551">
       <class name="com.practicetestautomation.tests.LoginTests">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.practicetestautomation.tests.LoginTests@3738449f]" started-at="2023-04-09T18:22:51 EDT" name="setUp" finished-at="2023-04-09T18:22:52 EDT" duration-ms="820" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.practicetestautomation.tests.LoginTests@3738449f]" started-at="2023-04-09T19:55:46 EDT" name="setUp" finished-at="2023-04-09T19:55:46 EDT" duration-ms="829" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,14 +64,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[org.testng.TestRunner@1f67761b]]>
+                <![CDATA[org.testng.TestRunner@63d5874f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.practicetestautomation.tests.LoginTests@3738449f]" started-at="2023-04-09T18:22:52 EDT" name="negativeLoginTest" finished-at="2023-04-09T18:22:53 EDT" duration-ms="1714" status="PASS">
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.practicetestautomation.tests.LoginTests@3738449f]" started-at="2023-04-09T19:55:46 EDT" name="negativeLoginTest" finished-at="2023-04-09T19:55:48 EDT" duration-ms="1622" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,15 +92,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.practicetestautomation.tests.LoginTests@3738449f]" started-at="2023-04-09T18:22:53 EDT" name="tearDown" finished-at="2023-04-09T18:22:53 EDT" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.practicetestautomation.tests.LoginTests@3738449f]" started-at="2023-04-09T19:55:48 EDT" name="tearDown" finished-at="2023-04-09T19:55:48 EDT" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.practicetestautomation.tests.LoginTests -->
     </test> <!-- NegativeUsernameTests -->
-    <test started-at="2023-04-09T18:22:53 EDT" name="NegativePasswordTests" finished-at="2023-04-09T18:22:58 EDT" duration-ms="4961">
+    <test started-at="2023-04-09T19:55:48 EDT" name="NegativePasswordTests" finished-at="2023-04-09T19:55:53 EDT" duration-ms="4353">
       <class name="com.practicetestautomation.tests.LoginTests">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.practicetestautomation.tests.LoginTests@67080771]" started-at="2023-04-09T18:22:53 EDT" name="setUp" finished-at="2023-04-09T18:22:56 EDT" duration-ms="3062" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.practicetestautomation.tests.LoginTests@67080771]" started-at="2023-04-09T19:55:48 EDT" name="setUp" finished-at="2023-04-09T19:55:51 EDT" duration-ms="2536" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,14 +119,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[org.testng.TestRunner@5a034157]]>
+                <![CDATA[org.testng.TestRunner@60c73e58]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.practicetestautomation.tests.LoginTests@67080771]" started-at="2023-04-09T18:22:56 EDT" name="negativeLoginTest" finished-at="2023-04-09T18:22:58 EDT" duration-ms="1384" status="PASS">
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.practicetestautomation.tests.LoginTests@67080771]" started-at="2023-04-09T19:55:51 EDT" name="negativeLoginTest" finished-at="2023-04-09T19:55:52 EDT" duration-ms="1328" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,7 +147,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.practicetestautomation.tests.LoginTests@67080771]" started-at="2023-04-09T18:22:58 EDT" name="tearDown" finished-at="2023-04-09T18:22:58 EDT" duration-ms="514" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.practicetestautomation.tests.LoginTests@67080771]" started-at="2023-04-09T19:55:52 EDT" name="tearDown" finished-at="2023-04-09T19:55:53 EDT" duration-ms="488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

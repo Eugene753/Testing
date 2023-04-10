@@ -2,7 +2,7 @@
 
 pipeline {
 
-    agent {label 'linux'}
+    agent any
 
     tools {
         maven '3.9.1'
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                sh 'mvn --version'
+                echo 'Hello World'
             }
         }
     }
