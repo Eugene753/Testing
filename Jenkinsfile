@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bash 'echo hello'
+                bat 'echo hello'
             }
         }
     }
