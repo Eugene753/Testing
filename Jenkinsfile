@@ -11,5 +11,15 @@ pipeline {
                 bat 'mvn -version'
             }
         }
+        stage('Test'){
+            steps {
+                bat 'mvn clean test -DsuiteXmlFile'
+            }
+        }
+        stage('Deploy'){
+            steps {
+                echo 'tests done sending slack messgaes'
+            }
+        }
     }
 }
