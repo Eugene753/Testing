@@ -9,7 +9,6 @@ pipeline {
         stage('verify tooling') {
             steps {
                 bat '''
-                mvn -version
                 docker version
                 docker info
                 docker compose version
