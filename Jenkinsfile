@@ -6,9 +6,16 @@ pipeline {
         maven 'MAVEN'
     }
     stages {
-        stage('Build') {
+        stage('verify tooling') {
             steps {
-                bat 'mvn -version'
+                bat '''
+                mvn -version
+                docker version
+                docker info
+                docker compose version
+                curl --version
+                jq --version
+                '''
             }
         }
         stage('Test'){
