@@ -92,6 +92,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>${suiteFile}</suiteXmlFile>
+						<suiteXmlFile></suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

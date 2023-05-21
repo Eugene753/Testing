@@ -31,7 +31,7 @@ pipeline {
         stage('Test'){
             steps {
                 //bat 'mvn clean test -DsuiteXmlFile'
-                bat 'mvn test -DdefaultSuiteFiles=src/test/resources/TestSuites/LoginTestsGrid.xml'
+                bat 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/TestSuites/LoginTestsGrid.xml'
                 echo 'verifyed tools and ran tests'
             }
         }
