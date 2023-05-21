@@ -67,7 +67,9 @@
 		<defaultSuiteFiles>
 			src/test/resources/TestSuites/LoginTestsLocal.xml
 		</defaultSuiteFiles>
+		<defaultSuite>src/test/resources/TestSuites/LoginTestsGrid.xml</defaultSuite>
 		<suiteFile>${defaultSuiteFiles}</suiteFile>
+		<suiteFile2>${defaultSuite}</suiteFile2>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -92,7 +94,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>${suiteFile}</suiteXmlFile>
-						<suiteXmlFile></suiteXmlFile>
+						<suiteXml>${suiteFile2}</suiteXml>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
