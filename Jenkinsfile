@@ -24,7 +24,7 @@ pipeline {
         stage('Start container') {
             steps {
                 bat 'docker swarm init'
-                bat 'docker stack deploy -c docker-compose-v3-swarm.yml grid'
+                bat 'docker stack deploy -c src/main/resources/docker-compose-v3-swarm.yml grid'
                 bat 'docker compose ps'
             }
         }
