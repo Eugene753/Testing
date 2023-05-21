@@ -25,7 +25,7 @@ pipeline {
             steps {
                 bat 'docker swarm init'
                 bat 'docker stack deploy -c src/main/resources/docker-compose-v3-swarm.yml grid'
-                bat 'docker compose ps'
+                bat 'docker ps'
             }
         }
         stage('Test'){
@@ -45,7 +45,7 @@ pipeline {
         always {
             bat 'docker stack rm grid'
             bat 'docker swarm leave --force'
-            bat 'docker compose ps'
+            bat 'docker ps'
         }
     }
 }
