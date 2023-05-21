@@ -13,20 +13,39 @@ pipeline {
                 docker info
                 docker compose version
                 curl --version
-                jq --version
                 '''
+            }
+        }
+        stage('Prune Docker data'){
+            steps {
+                bat 'docker system prune -a --volumes -f'
+            }
+        }
+        stage('Start container') {
+            steps {
+                bat 'docker swarm init'
+                bat 'docker stack deploy -c docker-compose-v3-swarm.yml grid'
+                bat 'docker compose ps'
             }
         }
         stage('Test'){
             steps {
                 //bat 'mvn clean test -DsuiteXmlFile'
-                echo 'veried tools'
+                bat 'mvn test -DdefaultSuiteFiles=src/test/resources/TestSuites/LoginTestsGrid.xml'
+                echo 'verifyed tools and ran tests'
             }
         }
         stage('Deploy'){
             steps {
-                echo 'tests done sending slack messgaes'
+                echo 'tests done sending slack messages'
             }
+        }
+    }
+    post {
+        always {
+            bat 'docker stack rm grid'
+            bat 'docker swarm leave --force'
+            bat 'docker compose ps'
         }
     }
 }
