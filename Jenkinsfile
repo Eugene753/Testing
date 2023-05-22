@@ -30,7 +30,7 @@ pipeline {
         }
         stage('Test'){
             steps {
-                bat 'mvn clean test -Dsurefire.suiteXmlFiles=${suiteFile2}'
+                bat 'mvn clean test -Dsurefire.suiteXmlFiles=${suiteFileGrid}'
                 echo 'verifyed tools and ran tests'
             }
         }
